@@ -1,0 +1,27 @@
+{
+  "ReverseProxy": {
+    "Routes": {
+      "burma_calendar_route": {
+        "ClusterId": "burma_calendar_cluster",
+        "Match": {
+          "Path": "/api/burma-calendar/{**catch-all}"
+        },
+        "Transforms": [
+          {
+            "PathPattern": "/api/BurmaCalendar/{**catch-all}"
+          }
+        ]
+      }
+    },
+    "Clusters": {
+      "burma_calendar_cluster": {
+        "Destinations": {
+          "burma_calendar_destination": {
+            "Address": "http://localhost:5000/"
+          }
+        }
+      }
+    }
+  }
+}
+

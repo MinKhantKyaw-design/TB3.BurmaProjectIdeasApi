@@ -13,4 +13,8 @@
     <Project Path="Snake/Snake.Api/Snake.Api.csproj" />
     <Project Path="Snake/Snake.database/Snake.Database.csproj" />
   </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="BurmaProjectIdeasYarp/BurmaProjectIdeasYarp.csproj" />
 </Solution>
