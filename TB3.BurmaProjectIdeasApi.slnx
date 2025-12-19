@@ -1,8 +1,8 @@
 <Solution>
   <Folder Name="/BurmaCalendar/" />
-  <Folder Name="/BurmeseRecipes2/">
-    <Project Path="BurmeseRecipes2/BurmeseRecipes.Api/BurmeseRecipes.Api.csproj" />
-    <Project Path="BurmeseRecipes2/BurmeseRecipes.Database/BurmeseRecipes.Database.csproj" />
+  <Folder Name="/BurmeseRecipes/">
+    <Project Path="BurmeseRecipes/BurmeseRecipes.Api/BurmeseRecipes.Api.csproj" />
+    <Project Path="BurmeseRecipes/BurmeseRecipes.Database/BurmeseRecipes.Database.csproj" />
   </Folder>
   <Folder Name="/MovieTicketOnlineBookingSystem/">
     <File Path="MovieTicketOnlineBookingSystem/MovieTicketOnlineBookingSystemApi.sql" />
