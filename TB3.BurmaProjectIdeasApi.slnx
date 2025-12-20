@@ -4,6 +4,7 @@
     <Project Path="BurmeseRecipes/BurmeseRecipes.Api/BurmeseRecipes.Api.csproj" />
     <Project Path="BurmeseRecipes/BurmeseRecipes.Database/BurmeseRecipes.Database.csproj" />
   </Folder>
+  <Folder Name="/IncompatibleFood/" />
   <Folder Name="/MovieTicketOnlineBookingSystem/">
     <File Path="MovieTicketOnlineBookingSystem/MovieTicketOnlineBookingSystemApi.sql" />
     <Project Path="MovieTicketOnlineBookingSystem/MovieTicketOnlineBookingSystem.Api/MovieTicketOnlineBookingSystem.Api.csproj" />
