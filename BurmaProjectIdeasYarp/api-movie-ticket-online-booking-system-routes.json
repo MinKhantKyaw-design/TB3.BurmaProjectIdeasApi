@@ -1,0 +1,104 @@
+{
+  "ReverseProxy": {
+    "Routes": {
+      "booking_route": {
+        "ClusterId": "movie_ticket_cluster",
+        "Match": {
+          "Path": "/api/booking/{**catch-all}"
+        },
+        "Transforms": [
+          {
+            "PathPattern": "/api/Booking/{**catch-all}"
+          }
+        ]
+      },
+      "cinema_route": {
+        "ClusterId": "movie_ticket_cluster",
+        "Match": {
+          "Path": "/api/cinema/{**catch-all}"
+        },
+        "Transforms": [
+          {
+            "PathPattern": "/api/Cinema/{**catch-all}"
+          }
+        ]
+      },
+      "cinema_room_route": {
+        "ClusterId": "movie_ticket_cluster",
+        "Match": {
+          "Path": "/api/cinema-room/{**catch-all}"
+        },
+        "Transforms": [
+          {
+            "PathPattern": "/api/CinemaRoom/{**catch-all}"
+          }
+        ]
+      },
+      "movie_route": {
+        "ClusterId": "movie_ticket_cluster",
+        "Match": {
+          "Path": "/api/movie/{**catch-all}"
+        },
+        "Transforms": [
+          {
+            "PathPattern": "/api/Movie/{**catch-all}"
+          }
+        ]
+      },
+      "movie_schedule_route": {
+        "ClusterId": "movie_ticket_cluster",
+        "Match": {
+          "Path": "/api/movie-schedule/{**catch-all}"
+        },
+        "Transforms": [
+          {
+            "PathPattern": "/api/MovieSchedule/{**catch-all}"
+          }
+        ]
+      },
+      "room_seat_route": {
+        "ClusterId": "movie_ticket_cluster",
+        "Match": {
+          "Path": "/api/room-seat/{**catch-all}"
+        },
+        "Transforms": [
+          {
+            "PathPattern": "/api/RoomSeat/{**catch-all}"
+          }
+        ]
+      },
+      "seat_price_route": {
+        "ClusterId": "movie_ticket_cluster",
+        "Match": {
+          "Path": "/api/seat-price/{**catch-all}"
+        },
+        "Transforms": [
+          {
+            "PathPattern": "/api/SeatPrice/{**catch-all}"
+          }
+        ]
+      },
+      "show_date_route": {
+        "ClusterId": "movie_ticket_cluster",
+        "Match": {
+          "Path": "/api/show-date/{**catch-all}"
+        },
+        "Transforms": [
+          {
+            "PathPattern": "/api/ShowDate/{**catch-all}"
+          }
+        ]
+      }
+    },
+    "Clusters": {
+      "movie_ticket_cluster": {
+        "Destinations": {
+          "movie_ticket_destination": {
+            "Address": "http://localhost:5015/"
+          }
+        }
+      }
+    }
+  }
+}
+

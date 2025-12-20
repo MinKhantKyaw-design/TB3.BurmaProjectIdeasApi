@@ -1,0 +1,27 @@
+{
+  "ReverseProxy": {
+    "Routes": {
+      "burmese_recipes_route": {
+        "ClusterId": "burmese_recipes_cluster",
+        "Match": {
+          "Path": "/api/burmese-recipes/{**catch-all}"
+        },
+        "Transforms": [
+          {
+            "PathPattern": "/api/BurmeseRecipe/{**catch-all}"
+          }
+        ]
+      }
+    },
+    "Clusters": {
+      "burmese_recipes_cluster": {
+        "Destinations": {
+          "burmese_recipes_destination": {
+            "Address": "http://localhost:5238/"
+          }
+        }
+      }
+    }
+  }
+}
+

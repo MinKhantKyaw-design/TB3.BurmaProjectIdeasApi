@@ -1,0 +1,27 @@
+{
+  "ReverseProxy": {
+    "Routes": {
+      "snake_route": {
+        "ClusterId": "snake_cluster",
+        "Match": {
+          "Path": "/api/snake/{**catch-all}"
+        },
+        "Transforms": [
+          {
+            "PathPattern": "/api/Snake/{**catch-all}"
+          }
+        ]
+      }
+    },
+    "Clusters": {
+      "snake_cluster": {
+        "Destinations": {
+          "snake_destination": {
+            "Address": "http://localhost:5036/"
+          }
+        }
+      }
+    }
+  }
+}
+

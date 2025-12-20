@@ -1,0 +1,9 @@
+{
+  "EnabledApis": {
+    "burma_calendar": true,
+    "burmese_recipes": true,
+    "movie_ticket_online_booking_system": true,
+    "snake": true
+  }
+}
+

@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "YARP",
+    "Projects": [
+      {
+        "Path": "BurmeseRecipes\\BurmeseRecipes.Api\\BurmeseRecipes.Api.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "MovieTicketOnlineBookingSystem\\MovieTicketOnlineBookingSystem.Api\\MovieTicketOnlineBookingSystem.Api.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "Snake\\Snake.Api\\Snake.Api.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "BurmaProjectIdeasYarp\\BurmaProjectIdeasYarp.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      }
+    ]
+  }
+]
